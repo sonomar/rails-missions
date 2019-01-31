@@ -21,8 +21,7 @@ require 'benchmark'
 	end
 
 	def index
-    	fibseq = get_fib_value(25)
-        render json: {status: 'SUCCESS', message: 'Loaded all posts', data: fibseq}, status: :ok
+		@fibseq = FibSeq.all
     end 
 
 
