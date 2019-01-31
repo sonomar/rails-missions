@@ -11,6 +11,24 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require jquery
+//= require jquery_ujs
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+// $(document).ready(function() {
+
+// 	$(document).on("submit", ".fib_check_form", function(event) {
+// 	    event.preventDefault();
+// 	    $.ajax({
+// 	      type: "Post",
+// 	      url: "/fib_seq",
+// 	      data: $(this).serialize()
+// 	      }).done(function(results) {
+
+// 	        $(".json_data").html(results);
+// 	      });
+// 	 });
+
+// });
