@@ -1,10 +1,12 @@
 <div>Solve the Fibonacci Sequence</div>
 
 Select the number of times you'd like to go into the sequence
- 	<%= form_tag '/fib_seq' do %>
+ 	<div class="fib_check_form">
+  <%= form_tag '/fib_seq' do %>
     <%=text_field_tag 'seqnum'%>
     <%= submit_tag "Check Sequence"%>
     <% end %>
+  </div>
 
  <table style="width:100%;">
    
@@ -25,3 +27,5 @@ Select the number of times you'd like to go into the sequence
   </tr>
 <%end%>
 </table>
+
+<div class="json_data"></div>
