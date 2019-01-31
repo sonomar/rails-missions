@@ -1,0 +1,27 @@
+<div>Solve the Fibonacci Sequence</div>
+
+Select the number of times you'd like to go into the sequence
+ 	<%= form_tag '/fib_seq' do %>
+    <%=text_field_tag 'seqnum'%>
+    <%= submit_tag "Check Sequence"%>
+    <% end %>
+
+ <table style="width:100%;">
+   
+ <tr>
+    <th>ID</th>
+    <th>Value</th> 
+    <th>Result</th>
+    <th>Runtime</th>\
+    <th>Created At</th>
+  </tr>
+ <%@fibseq.each do |item|%>
+  <tr style="text-align:center;">
+    <td><%=item.id%></td>
+	<td><%=item.value%></td>
+	<td><%=item.result%></td>
+	<td><%=item.runtime%></td>
+	<td><%=item.created_at%></td>
+  </tr>
+<%end%>
+</table>
