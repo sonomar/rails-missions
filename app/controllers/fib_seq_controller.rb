@@ -7,7 +7,7 @@ require 'benchmark'
 			first = 1
 			second = 1
 			time = Benchmark.measure {
-				series_num.times do
+				(series_num -1).times do
 					total = first + second
 					first = second
 					second = total
